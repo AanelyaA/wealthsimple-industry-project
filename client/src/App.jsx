@@ -10,6 +10,7 @@ function App() {
   return (
     <>
       <h1>WealthSimple FLEX App</h1>
+      <PersonalisedQuestionnaire/>
     </>
   )
 }
