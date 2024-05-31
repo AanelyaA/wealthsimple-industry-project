@@ -26,7 +26,7 @@ const QuizInfo = () => {
                 <li>Tap on options to select the correct answer</li>
                 <li>Click next question until you completed all the questions</li>
             </ul>
-            <Link to={`/quiz/${quizId}/session`}>Start Quiz</Link>
+            <Link className="quiz-btn" to={`/quiz/${quizId}/session`}>Start Quiz</Link>
         </div>
     )
 };
