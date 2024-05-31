@@ -13,12 +13,12 @@ function App() {
     <Router>
       <div className="App">
         <Routes>
-          <Route path="/" element={<LandingPage />} />
+          {/* <Route path="/" element={<LandingPage />} /> */}
           <Route path="/intro" element={<IntroPage />} />
           <Route path="/login" element={<LoginPage />} />
           <Route path="/welcome" element={<PersonalisedQuestionnaire />} />
           <Route path="/quizzes" element={<QuizList />} />
-          <Route path="/rewards" element={<InvestProfile />} />
+          <Route path="/" element={<InvestProfile />} />
         </Routes>
       </div>
     </Router>
