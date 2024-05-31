@@ -8,7 +8,7 @@ app.use(cors());
 
 // Mock user data
 const users = [
-  { email: 'client@wealthsimple.com', password: 'password123' }
+  { email: 'client@wealthsimple.com', password: 'passwordpassword' }
 ];
 
 

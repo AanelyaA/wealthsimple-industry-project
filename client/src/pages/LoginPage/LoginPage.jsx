@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
 import './LoginPage.scss';
@@ -36,7 +36,7 @@ const Login = () => {
                         <label>Password</label>
                         <input type="password" value={password} onChange={(e) => setPassword(e.target.value)} required />
                 </div>
-                {error && <p>{error}</p>}
+                {error && <p className='error__message'>{error}</p>}
                 </div>
                 <button type="submit">Log in</button>
             </form>
