@@ -1,0 +1,64 @@
+{
+    "questions": [
+        {
+            "id": 1,
+            "question": "What is one way to save money on food expenses?",
+            "options": {
+                "A": "Eating out frequently.",
+                "B": "Cooking at home.",
+                "C": "Buying ready-made meals.",
+                "D": "Ordering takeout."
+            },
+            "correct_answer": "B",
+            "explanation": "Cooking at home instead of eating out is healthier for both your wallet and your body."
+        },
+        {
+            "id": 2,
+            "question": "What should you do with multiple streaming subscriptions to save money?",
+            "options": {
+                "A": "Subscribe to more services.",
+                "B": "Cut down to one service.",
+                "C": "Upgrade to premium plans.",
+                "D": "Share accounts with friends."
+            },
+            "correct_answer": "B",
+            "explanation": "Cutting down to one streaming service can save money on fixed expenses."
+        },
+        {
+            "id": 3,
+            "question": "According to the 50/30/20 rule, what percentage of your income should go towards savings and investments?",
+            "options": {
+                "A": "10%",
+                "B": "20%",
+                "C": "30%",
+                "D": "50%"
+            },
+            "correct_answer": "B",
+            "explanation": "20% of your income should be used for ensuring your financial health through savings and investments."
+        },
+        {
+            "id": 4,
+            "question": "What is one suggested method for reducing entertainment costs with friends?",
+            "options": {
+                "A": "Going to expensive bars.",
+                "B": "Hosting potlucks.",
+                "C": "Taking luxury vacations.",
+                "D": "Attending concerts."
+            },
+            "correct_answer": "B",
+            "explanation": "Hosting potlucks or having friends over for movie nights can save money compared to going out."
+        },
+        {
+            "id": 5,
+            "question": "Why is it important to revisit your budget every month?",
+            "options": {
+                "A": "To increase spending limits.",
+                "B": "To adjust for new expenses and income sources.",
+                "C": "To reduce all fixed expenses.",
+                "D": "To avoid saving money."
+            },
+            "correct_answer": "B",
+            "explanation": "Revisiting your budget allows you to make adjustments for new expenses and income sources, ensuring it remains manageable."
+        }
+    ]
+}

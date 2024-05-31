@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import QuizQuestion from '../../components/QuizQuestion/QuizQuestion';
-import qData from '../../../data/Flex-Quiz-Answer.json';
+import qData from '../../../data/Flex-Quiz-Answer2.json';
 import './Quiz.scss';
 
 const Quiz = () => {

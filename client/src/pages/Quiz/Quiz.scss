@@ -1,9 +1,11 @@
 @use "../../styles/partials/global" as *;
 
 .quiz {
-    .progress-bar {
-      margin-bottom: 20px;
-      font-weight: bold;
-    }
-  }
-  
+  padding: 16px;
+
+    
+}
+.progress-bar {
+  margin-bottom: 20px;
+  font-weight: bold;
+}
