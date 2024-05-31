@@ -10,28 +10,29 @@ export default function ScaleQuestionnaire() {
 
   const handleSubmit = () => {
     alert(`Selected scale value: ${scaleValue}`);
-    // Add your submission logic here
   };
 
   return (
     <div className="scale-questionnaire">
       <h1>Rate your current financial situation</h1>
-      <div className="scale-container">
+      <div className="scale-questionnaire__container">
         <input
           type="range"
           min="1"
           max="10"
           value={scaleValue}
-          className="slider"
+          className="scale-questionnaire__slider"
           onChange={handleSliderChange}
         />
-        <div className="scale-labels">
+        <div className="scale-questionnaire__labels">
           <span>1</span>
           <span>10</span>
         </div>
-        <div className="scale-value">Current value: {scaleValue}</div>
+        <div className="scale-questionnaire__value">
+          Current value: {scaleValue}
+        </div>
       </div>
-      <button className="submit-button" onClick={handleSubmit}>
+      <button className="scale-questionnaire__button" onClick={handleSubmit}>
         Submit
       </button>
     </div>
