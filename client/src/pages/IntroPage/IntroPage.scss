@@ -1,4 +1,9 @@
+@use '../../styles/partials/mixins' as *;
+@use '../../styles/partials/typography' as *;
+@use '../../styles/partials/variables' as *;
+
 .animated-page {
+    font-family: $primary-font;
     display: flex;
     flex-direction: column;
     height: 100vh;
@@ -9,7 +14,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #f0f0f0; 
+    // background-color: #f0f0f0; 
   
     .animation {
       width: 100%;
@@ -21,12 +26,13 @@
   }
   
   .button-section {
+    font-family: $primary-font;
     flex: 1;
     display: flex;
     justify-content: space-around;
     align-items: center;
     // background-color: #ffffff; 
-    background-color: #f0f0f0; 
+    // background-color: #f0f0f0; 
   
     .login-button, .signup-button {
       padding: 10px 20px;

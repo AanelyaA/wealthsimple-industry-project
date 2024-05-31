@@ -1,0 +1,55 @@
+@use "../partials/_mixins" as *;
+@use "../partials/_variables" as *;
+@use "../partials/_typography" as *;
+
+* {
+  margin: 0rem;
+  padding: 0rem;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: $primary-font;
+  color: $text-color;
+}
+
+h1 {
+  font-weight: 400;
+  color: $heading-color;
+  font-family: $title-font;
+}
+
+h2 {
+  font-weight: 400;
+  font-family: $header-font;
+}
+
+p {
+  font-weight: 400;
+}
+
+ul,
+li {
+  list-style-type: none;
+  text-decoration: none;
+}
+
+a {
+  text-decoration: none;
+  word-wrap: break-word;
+  margin: 0rem;
+  padding: 0rem;
+}
+
+input:not([type="radio"]),
+textarea,
+text,
+button {
+  font-family: inherit;
+  color: inherit;
+  background: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
