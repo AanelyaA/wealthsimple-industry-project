@@ -1,0 +1,39 @@
+@use "../../styles/partials/global" as *;
+
+.quiz-question {
+    .option {
+      cursor: pointer;
+      padding: 10px;
+      margin: 5px 0;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      list-style: none;
+  
+      &:hover {
+        background-color: #f0f0f0;
+      }
+  
+      &.correct {
+        background-color: #d4edda;
+        border-color: #c3e6cb;
+        color: #155724;
+      }
+  
+      &.incorrect {
+        background-color: #f8d7da;
+        border-color: #f5c6cb;
+        color: #721c24;
+      }
+    }
+  
+    .animation-container {
+      margin-top: 20px;
+      max-width: 200px;
+    }
+  
+    .explanation {
+      margin-top: 20px;
+      font-style: italic;
+    }
+  }
+  

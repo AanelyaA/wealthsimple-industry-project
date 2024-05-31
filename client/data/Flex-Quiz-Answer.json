@@ -1,0 +1,64 @@
+{
+    "questions": [
+      {
+        "id": 1,
+        "question": "What percentage of mutual funds, financial experts, and investment advisory services underperform the overall market and comparable indexes?",
+        "options": {
+          "A": "95%",
+          "B": "80%",
+          "C": "50%",
+          "D": "20%"
+        },
+        "correct_answer": "B",
+        "explanation": "Fully 80% underperform, according to the highly respected Hulbert Financial Digest. And it’s not only because of the fees they charge. The experts are humans, too, and they’re predictably irrational like the rest of us, buying and selling at the wrong times."
+      },
+      {
+        "id": 2,
+        "question": "The top-performing mutual fund for the decade ending December 31, 2009, enjoyed an 18% annual return. What annual return did the fund’s typical investors actually receive?",
+        "options": {
+          "A": "17%, after fees",
+          "B": "14% - 18% depending on investors’ hold time",
+          "C": "Lost an average of 11%",
+          "D": "8%, due to inflation, taxes, and fees"
+        },
+        "correct_answer": "C",
+        "explanation": "According to Morningstar, Inc., they lost an average of 11% per year—every year—for ten years, even though the fund’s prospectus boasted an 18% annual gain. That’s because mutual funds are legally required to advertise only the results of “buy-and-hold” investors. So when a fund advertises returns for any given period—in this case, a decade—it assumes investors bought the fund on the first day of that period and held it until the last day of the period—no matter how wild the ride got. But that rarely happens in real life. In fact, on average, investors hold mutual funds for less than five years."
+      },
+      {
+        "id": 3,
+        "question": "How much of the value of your savings will be consumed over the next 35 years, if you pay fees of 1% per year and your returns average 7% per year?",
+        "options": {
+          "A": "1%",
+          "B": "3%",
+          "C": "10%",
+          "D": "28%"
+        },
+        "correct_answer": "D",
+        "explanation": "Fees of only 1% would slash the value of your retirement account by 28% over the next 35 years, assuming your returns average 7% per year, according to the U.S. Department of Labor. But most people pay at least 1% in fees each year. On average, participants in small retirement plans pay 1.9% in fees annually, and participants in large plans pay 1.08%."
+      },
+      {
+        "id": 4,
+        "question": "If you own a $20 stock and it goes up by 40%, how much money did you make on that stock?",
+        "options": {
+          "A": "$8, less the commission",
+          "B": "Nothing",
+          "C": "It depends on your original purchase price (cost basis)",
+          "D": "$28"
+        },
+        "correct_answer": "B",
+        "explanation": "You didn’t make any money unless you actually sold the stock and (hopefully) locked in your gains. Many people make the mistake of assuming that paper profits are the same as real wealth."
+      },
+      {
+        "id": 5,
+        "question": "The Pension Protection Act of 2006, passed by Congress, is about 401(k) retirement plans. Who does this law protect?",
+        "options": {
+          "A": "Employees who put money into their companies’ 401(k) plans",
+          "B": "Employers who offer 401(k) plans",
+          "C": "Workers not eligible for a 401(k) plan",
+          "D": "Workers whose pension funds were at risk"
+        },
+        "correct_answer": "B",
+        "explanation": "It protects your employer from liability—as long as your employer automatically invests your 401(k) money in certain types of mutual funds. The problem is those funds are often costly and perform poorly. If you lose your shirt, you have no recourse. You may choose to opt-out of these automatic investments, but 90% of all new hires let their plan administrators choose where their money will be invested for them, according to Towers Watson, a global financial consulting firm."
+      }
+    ]
+}
