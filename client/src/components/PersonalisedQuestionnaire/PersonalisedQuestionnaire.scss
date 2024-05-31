@@ -1,5 +1,6 @@
 .questionnaire {
-  //   text-align: left;
+  font-family: 'Futura PT';
+  font-weight: 400;
 
   &__title {
     margin-bottom: 1.25rem;
@@ -36,6 +37,7 @@
     color: white;
     font-size: 1rem;
     cursor: pointer;
+    font-family: 'Futura PT';
 
     //   &:hover {
     //     background-color: #F0F0F0;

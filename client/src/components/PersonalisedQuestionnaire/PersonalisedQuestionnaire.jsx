@@ -2,6 +2,7 @@ import { useState } from "react";
 import "./PersonalisedQuestionnaire.scss";
 import Checkbox from "../../assets/icons/checkbox.svg";
 import CheckboxChecked from "../../assets/icons/checkbox-checked.svg";
+import { useNavigate } from "react-router-dom";
 
 const courseTopics = [
   { id: 1, title: "Introduction to Budgeting" },
@@ -13,6 +14,7 @@ const courseTopics = [
 
 export default function PersonalisedQuestionnaire() {
   const [selectedOptions, setSelectedOptions] = useState([]);
+  const navigate = useNavigate();
 
   const handleOptionClick = (id) => {
     setSelectedOptions((prevSelected) =>
@@ -20,6 +22,10 @@ export default function PersonalisedQuestionnaire() {
         ? prevSelected.filter((item) => item !== id)
         : [...prevSelected, id]
     );
+  };
+
+  const handleSubmit = () => {
+    navigate(`/quizzes`, { state: { selectedOptions } });
   };
 
   return (
@@ -47,7 +53,9 @@ export default function PersonalisedQuestionnaire() {
           </label>
         ))}
       </div>
-      <button className="questionnaire__submit">Continue</button>
+      <button className="questionnaire__submit" onClick={handleSubmit}>
+        Continue
+      </button>
     </div>
   );
 }
