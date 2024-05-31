@@ -14,7 +14,9 @@ export default function ScaleQuestionnaire() {
 
   return (
     <div className="scale-questionnaire">
-      <h1>Rate your current financial situation</h1>
+      <h1 className="scale-questionnaire__title">
+        Rate your current financial situation
+      </h1>
       <div className="scale-questionnaire__container">
         <input
           type="range"
