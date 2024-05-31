@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import './LandingPage.scss'; 
-import videoSrc from '../../assets/Flex-Logo.mp4'; // Make sure the path is correct
+import videoSrc from '../../assets/Flex-Logo.mp4'; 
 
 const LandingPage = () => {
   const navigate = useNavigate();
