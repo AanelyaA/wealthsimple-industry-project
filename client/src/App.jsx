@@ -17,8 +17,8 @@ function App() {
           <Route path="/" element={<LandingPage />} />
           <Route path="/intro" element={<IntroPage />} />
           <Route path="/login" element={<LoginPage />} />
-          <Route path="/scale" element={<ScaleQuestionnaire />} />
-          <Route path="/welcome" element={<PersonalisedQuestionnaire />} />
+          <Route path="/welcome1" element={<ScaleQuestionnaire />} />
+          <Route path="/welcome2" element={<PersonalisedQuestionnaire />} />
           <Route path="/quizzes" element={<QuizList />} />
           <Route path="/rewards" element={<InvestProfile />} />
         </Routes>

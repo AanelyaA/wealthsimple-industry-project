@@ -11,7 +11,7 @@ export default function ScaleQuestionnaire() {
   };
 
   const handleSubmit = () => {
-    navigate(`/welcome`);
+    navigate(`/welcome2`);
   };
 
   const scaleBars = [];
