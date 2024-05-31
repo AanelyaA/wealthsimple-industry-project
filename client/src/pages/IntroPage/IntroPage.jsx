@@ -1,7 +1,6 @@
-import React from 'react';
 import Lottie from 'lottie-react';
 import { Link } from 'react-router-dom'; 
-import animationData from '../../../public/animation/Animation.json'; 
+import animationData from '../../../public/animation/Animation2.json'; 
 import './IntroPage.scss';
 
 const AnimatedPage = () => {

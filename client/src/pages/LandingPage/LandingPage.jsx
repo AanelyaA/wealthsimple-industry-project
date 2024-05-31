@@ -9,7 +9,7 @@ const LoadingPage = () => {
   useEffect(() => {
     const timer = setTimeout(() => {
       navigate('/intro');
-    }, 3000);
+    }, 4000);
 
     return () => clearTimeout(timer);
   }, [navigate]);

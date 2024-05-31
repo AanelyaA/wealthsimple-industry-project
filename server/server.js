@@ -11,7 +11,6 @@ const users = [
   { email: 'client@wealthsimple.com', password: 'passwordpassword' }
 ];
 
-
 app.post('/api/login', (req, res) => {
   const { email, password } = req.body;
   const user = users.find(user => user.email === email && user.password === password);
