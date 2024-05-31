@@ -1,3 +1,5 @@
+@use "../../styles/partials/global" as *;
+
 .quiz-question {
     .option {
       cursor: pointer;

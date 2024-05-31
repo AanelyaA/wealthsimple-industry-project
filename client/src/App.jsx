@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import { BrowserRouter as Router, Route, Routes, Navigate } from "react-router-dom";
 import LoginPage from "./pages/LoginPage/LoginPage";
 // import IntroPage from "./pages/IntroPage/IntroPage";
 import LandingPage from "./pages/LandingPage/LandingPage";
@@ -20,12 +20,13 @@ function App() {
           <Route path="/" element={<LandingPage />} />
           {/* <Route path="/intro" element={<IntroPage />} /> */}
           <Route path="/login" element={<LoginPage />} />
+          <Route path="/welcome" element={<Navigate to={`/welcome1`} />} />
           <Route path="/welcome1" element={<ScaleQuestionnaire />} />
           <Route path="/welcome2" element={<PersonalisedQuestionnaire />} />
           <Route path="/quizzes" element={<QuizList />} />
           <Route path="/rewards" element={<InvestProfile />} />
-          <Route path="/quizinfo" element={<QuizInfo />} />
-          <Route path="/quiz" element={<Quiz />} />
+          <Route path="/quiz/:quizId" element={<QuizInfo />} />
+          <Route path="/quiz/:quizId/session" element={<Quiz />} />
         </Routes>
       </div>
 

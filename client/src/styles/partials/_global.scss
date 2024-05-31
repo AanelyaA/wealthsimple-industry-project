@@ -1,6 +1,4 @@
-@use "../partials/_mixins" as *;
-@use "../partials/_variables" as *;
-@use "../partials/_typography" as *;
+@import './bootstrap';
 
 * {
   margin: 0rem;
