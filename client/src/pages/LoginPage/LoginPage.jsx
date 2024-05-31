@@ -14,7 +14,7 @@ const Login = () => {
         try {
             const response = await axios.post('http://localhost:3000/api/login', { email, password });
             if (response.data.success) {
-                navigate('/dashboard'); // redirect to dashboard on success
+                navigate('/welcome1'); // redirect to dashboard on success
             } else {
                 setError('Invalid email or password');
             }
