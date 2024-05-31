@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import { useLocation } from 'react-router-dom';
 import './QuizList.scss';
 
 const learningModules = [
@@ -8,26 +9,36 @@ const learningModules = [
     { id: 4, title: 'Managing Debt Effectively'},
     { id: 5, title: 'Retirement Planning' }
 ];
+
 const QuizList = () => {
-        const [recommendedModules, setRecommendedModules] = useState([]);
-        useEffect(() => {
-            const filteredModules = learningModules.filter(module => module.level);
-            setRecommendedModules(filteredModules);
-        }, []);
-        return (
-            <div className="learning-path">
-                <h2>Earn to Learn</h2>
-                {recommendedModules.length > 0 ? (
-                    <ul>
-                        {recommendedModules.map(module => (
-                            <li key={module.id}>{module.title}</li>
-                        ))}
-                    </ul>
-                ) : (
-                    <p>Selected Quizzes</p>
-                )}
-            </div>
-        );
-    };
+    const [selectedModules, setSelectedModules] = useState([]);
+    const location = useLocation();
+
+    useEffect(() => {
+        if (location.state && location.state.selectedOptions) {
+            const filteredModules = learningModules.filter(module => 
+                location.state.selectedOptions.includes(module.id)
+            );
+            setSelectedModules(filteredModules);
+        }
+    }, [location.state]);
+
+    return (
+        <div className="learning-path">
+            <h2>Selected Quizzes</h2>
+            {selectedModules.length > 0 ? (
+                <ul>
+                    {selectedModules.map(module => (
+                        <li key={module.id}>
+                            <a href={`/quiz/${module.id}`}>{module.title}</a>
+                        </li>
+                    ))}
+                </ul>
+            ) : (
+                <p>No quizzes selected - go back and select! </p>
+            )}
+        </div>
+    );
+};
 
 export default QuizList;
