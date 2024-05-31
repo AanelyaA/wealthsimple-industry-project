@@ -2,7 +2,8 @@ import { useState } from "react";
 import "./PersonalisedQuestionnaire.scss";
 import Checkbox from "../../assets/icons/checkbox.svg";
 import CheckboxChecked from "../../assets/icons/checkbox-checked.svg";
-import { useNavigate } from "react-router-dom";
+import BackArrow from "../../assets/icons/arrow_back_24dp.svg"
+import { Link, useNavigate } from "react-router-dom";
 
 const courseTopics = [
   { id: 1, title: "Introduction to Budgeting" },
@@ -30,6 +31,16 @@ export default function PersonalisedQuestionnaire() {
 
   return (
     <div className="questionnaire">
+      <div className="questionnaire__controls">
+        <Link to="/scale">
+          <img
+            src={BackArrow}
+            alt="back arrow"
+            className="questionnaire__arrow"
+          />
+        </Link>
+        <h4 className="questionnaire__heading">Choose your interests</h4>
+      </div>
       <h1 className="questionnaire__title">
         What are you interested in learning about?
       </h1>
@@ -53,7 +64,12 @@ export default function PersonalisedQuestionnaire() {
           </label>
         ))}
       </div>
-      <button className="questionnaire__submit" onClick={handleSubmit}>
+      <button
+        className={`questionnaire__submit ${
+          selectedOptions.length > 0 ? "questionnaire__submit-active" : ""
+        }`}
+        onClick={handleSubmit}
+      >
         Continue
       </button>
     </div>
