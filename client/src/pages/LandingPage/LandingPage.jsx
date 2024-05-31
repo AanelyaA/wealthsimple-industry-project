@@ -20,8 +20,8 @@ const LandingPage = () => {
       <div className="video-container">
         <video src={videoSrc} autoPlay loop muted />
       </div>
-      <h1>Grow your money</h1>
-      <p>Build long-term wealth with smart investing tools and personalized advice. Trusted by millions of Canadians.</p>
+      <h1>Flex Financial Strength</h1>
+      <p>Unlock financial savvy with our gamified app, empowering Canadians to flex financial strength.</p>
       <div className="buttons">
         <button className="sign-up">Sign up</button>
         <button className="log-in" onClick={handleLogin}>Log in</button>
