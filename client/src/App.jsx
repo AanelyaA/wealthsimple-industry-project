@@ -5,6 +5,8 @@ import LandingPage from "./pages/LandingPage/LandingPage";
 import InvestProfile from "./components/InvestProfile/InvestProfile";
 import PersonalisedQuestionnaire from "./components/PersonalisedQuestionnaire/PersonalisedQuestionnaire";
 import QuizList from "./components/QuizList/QuizList";
+import QuizInfo from './pages/QuizInfo/QuizInfo';
+import Quiz from './pages/Quiz/Quiz';
 import "./App.scss";
 
 
@@ -19,6 +21,8 @@ function App() {
           <Route path="/welcome" element={<PersonalisedQuestionnaire />} />
           <Route path="/quizzes" element={<QuizList />} />
           <Route path="/rewards" element={<InvestProfile />} />
+          <Route path="/quizinfo" element={<QuizInfo />} />
+          <Route path="/quiz" element={<Quiz />} />
         </Routes>
       </div>
     </Router>
