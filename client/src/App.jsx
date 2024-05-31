@@ -10,7 +10,6 @@ import './App.scss'
 import QuizList from './components/QuizList/QuizList'
 
 
-
 function App() {
   return (
     <Router>
@@ -22,5 +21,5 @@ function App() {
     </Router>
   );
 
-
+  }
 export default App;
