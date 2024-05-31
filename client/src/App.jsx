@@ -15,6 +15,7 @@ function App() {
     <Router>
       <div className="App">
         <Routes>
+          <Route path="/" element={<Navigate to={`/landing`} />} />
           <Route path="/intro" element={<IntroPage />} />
           <Route path="/login" element={<LoginPage />} />
           <Route path="/welcome" element={<Navigate to={`/welcome1`} />} />
@@ -22,7 +23,7 @@ function App() {
           <Route path="/welcome2" element={<PersonalisedQuestionnaire />} />
           <Route path="/quizzes" element={<QuizList />} />
           <Route path="/landing" element={<LandingPage />} />
-          <Route path="/" element={<InvestProfile />} />
+          <Route path="/profile" element={<InvestProfile />} />
           <Route path="/quiz/:quizId" element={<QuizInfo />} />
           <Route path="/quiz/:quizId/session" element={<Quiz />} />
         </Routes>
