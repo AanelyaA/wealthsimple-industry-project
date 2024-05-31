@@ -1,11 +1,29 @@
 const express = require('express');
-const app = express();
+const bodyParser = require('body-parser');
+const cors = require('cors');
 
-app.get('/', (req, res) => {
-  res.send('Hello pretty ladies!');
+const app = express();
+app.use(bodyParser.json());
+app.use(cors());
+
+// Mock user data
+const users = [
+  { email: 'client@wealthsimple.com', password: 'password123' }
+];
+
+
+app.post('/api/login', (req, res) => {
+  const { email, password } = req.body;
+  const user = users.find(user => user.email === email && user.password === password);
+  if (user) {
+    console.log(user.email)
+    res.json({ success: true });
+  } else {
+    res.json({ success: false });
+  }
 });
 
-const port=process.env.PORT ||3000;
-app.listen(port, () => {
-  console.log(`Wealthsimple server is running on port ${port}`);
+const PORT = process.env.PORT || 3000;
+app.listen(PORT, () => {
+  console.log(`Server is running on port ${PORT}`);
 });
