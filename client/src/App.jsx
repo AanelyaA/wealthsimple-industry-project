@@ -17,14 +17,14 @@ function App() {
       <div className="App">
 
         <Routes>
-          <Route path="/" element={<LandingPage />} />
-          {/* <Route path="/intro" element={<IntroPage />} /> */}
+          {/* <Route path="/" element={<LandingPage />} /> */}
+          <Route path="/intro" element={<IntroPage />} />
           <Route path="/login" element={<LoginPage />} />
           <Route path="/welcome" element={<Navigate to={`/welcome1`} />} />
           <Route path="/welcome1" element={<ScaleQuestionnaire />} />
           <Route path="/welcome2" element={<PersonalisedQuestionnaire />} />
           <Route path="/quizzes" element={<QuizList />} />
-          <Route path="/rewards" element={<InvestProfile />} />
+          <Route path="/" element={<InvestProfile />} />
           <Route path="/quiz/:quizId" element={<QuizInfo />} />
           <Route path="/quiz/:quizId/session" element={<Quiz />} />
         </Routes>
