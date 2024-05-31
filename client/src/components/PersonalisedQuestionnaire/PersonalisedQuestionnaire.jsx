@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import "./PersonalisedQuestionnaire.scss";
 import Checkbox from "../../assets/icons/checkbox.svg";
 import CheckboxChecked from "../../assets/icons/checkbox-checked.svg";
