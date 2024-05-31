@@ -47,8 +47,8 @@ const InvestProfile = () => {
             </div>
             <div className="summary-cards">
                 <div className="summary-card">
-                <p>30 min</p>
                     <h3>Rewards Earned</h3>
+                    <p>30 min</p>
                     <p>Expert Time</p>
                     <span className="badge">30 min</span>
                 </div>
