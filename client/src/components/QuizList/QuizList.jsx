@@ -20,7 +20,7 @@ const QuizList = () => {
                 {recommendedModules.length > 0 ? (
                     <ul>
                         {recommendedModules.map(module => (
-                            <li key={module.id}>{module.title} Test</li>
+                            <li key={module.id}>{module.title}</li>
                         ))}
                     </ul>
                 ) : (
