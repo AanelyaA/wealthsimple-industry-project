@@ -1,0 +1,77 @@
+@use "../../styles/partials/variables" as *;
+@use "../../styles/partials/mixins" as *;
+@use "../../styles/partials/typography" as *;
+
+.questionnaire {
+  font-family: "Futura PT";
+  font-weight: 400;
+  margin: 1rem 0.5rem;
+
+  &__controls {
+    display: flex;
+    flex-direction: row;
+    margin: 1rem 0 2rem 0;
+    gap: 5rem;
+    align-items: center;
+    align-content: baseline;
+  }
+
+  &__arrow {
+    margin-bottom: -0.35rem;
+  }
+
+  &__heading {
+    margin: 0;
+    font-weight: 400;
+  }
+
+  &__title {
+    margin-bottom: 1.25rem;
+    font-size: $font-size-xl;
+    color: $heading-color;
+  }
+
+  &__options {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__option {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.625rem;
+    padding: 1rem 0.5rem;
+    border-bottom: 1px solid #d9d9d9;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    color: $heading-color;
+  }
+
+  &__checkbox-icon {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+
+  &__submit {
+    margin-top: 1.25rem;
+    padding: 0.8rem 3rem;
+    width: calc(100% - 1rem);
+    border: 1px solid #f5f9f8;
+    border-radius: 50px;
+    background-color: #f0f0f0;
+    color: #949291;
+    font-size: 1rem;
+    cursor: pointer;
+    font-family: "Futura PT";
+    position: fixed;
+    bottom: 5rem;
+    left: 50%;
+    transform: translateX(-50%);
+
+    &-active {
+      background-color: #33302f;
+      color: $primary-color;
+    }
+  }
+}
