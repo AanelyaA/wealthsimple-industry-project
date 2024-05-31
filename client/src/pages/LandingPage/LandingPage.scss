@@ -24,16 +24,18 @@
     }
 
     h1 {
-        font-size: $font-size-xl;
+        font-size: 1.7rem;
         font-family: $title-font;
         margin-bottom: $padding-base;
         color: $heading-color;
+        // margin-bottom: 2rem;
     }
 
     p {
         font-size: $font-size-base;
         color: $text-color;
         margin-bottom: $margin-base;
+        margin-bottom: 5rem;
     }
 
     .buttons {
@@ -66,7 +68,7 @@
 
     .logo{
         width: 50%;
-        margin-top: 7rem;
+        margin-top: 5rem;
     }
 
     .pagination {
