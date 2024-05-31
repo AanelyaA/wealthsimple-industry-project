@@ -3,6 +3,7 @@
 @use '../../styles/partials/typography' as *;
 
 .landing-page {
+
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -102,3 +103,4 @@
         }
     }
 }
+
