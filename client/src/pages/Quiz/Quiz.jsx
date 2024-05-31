@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import QuizQuestion from '../../components/QuizQuestion/QuizQuestion';
 import qData from '../../../data/Flex-Quiz-Answer.json';
 import './Quiz.scss';
@@ -8,8 +9,9 @@ const Quiz = () => {
     const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
     const [selectedOption, setSelectedOption] = useState(null);
     const [showExplanation, setShowExplanation] = useState(false);
-    const [correctOption, setCorrectOption] = useState(questions[0].correct_answer); // 设置初始值
+    const [correctOption, setCorrectOption] = useState(questions[0].correct_answer);
     const [isLastQuestion, setIsLastQuestion] = useState(false);
+    const navigate = useNavigate();
   
     const handleOptionSelect = (key) => {
         setSelectedOption(key);
@@ -20,7 +22,7 @@ const Quiz = () => {
         setSelectedOption(null);
         setShowExplanation(false);
         setCurrentQuestionIndex(currentQuestionIndex + 1);
-        setCorrectOption(questions[currentQuestionIndex + 1].correct_answer); // 更新正确答案
+        setCorrectOption(questions[currentQuestionIndex + 1].correct_answer);
         setIsLastQuestion(currentQuestionIndex === questions.length - 2);
     };
   
@@ -38,7 +40,10 @@ const Quiz = () => {
                     correctOption={correctOption}
                 />
                 {isLastQuestion ? (
-                    <button onClick={() => alert('Quiz Completed!')}>Check Result</button>
+                    <button onClick={() => {
+                        alert('Quiz Completed!');
+                        navigate("/profile")
+                    }}>Check Result</button>
                 ) : (
                     <button 
                         onClick={handleNextQuestion} 
