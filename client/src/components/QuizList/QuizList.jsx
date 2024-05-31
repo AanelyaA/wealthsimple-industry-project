@@ -2,29 +2,29 @@ import { useState, useEffect } from 'react';
 import './QuizList.scss';
 
 const learningModules = [
-    { id: 1, title: 'Introduction to Budgeting', level: 'beginner' },
-    { id: 2, title: 'Understanding Investments', level: 'beginner' },
-    { id: 3, title: 'Advanced Investment Strategies', level: 'advanced' },
-    { id: 4, title: 'Managing Debt Effectively', level: 'intermediate' },
-    { id: 5, title: 'Retirement Planning', level: 'advanced' }
+    { id: 1, title: 'Introduction to Budgeting'},
+    { id: 2, title: 'Understanding Investments' },
+    { id: 3, title: 'Saving Strategies'},
+    { id: 4, title: 'Managing Debt Effectively'},
+    { id: 5, title: 'Retirement Planning' }
 ];
-const QuizList = ({ userLevel }) => {
+const QuizList = () => {
         const [recommendedModules, setRecommendedModules] = useState([]);
         useEffect(() => {
-            const filteredModules = learningModules.filter(module => module.level === userLevel);
+            const filteredModules = learningModules.filter(module => module.level);
             setRecommendedModules(filteredModules);
-        }, [userLevel]);
+        }, []);
         return (
             <div className="learning-path">
-                <h2>Learn to Earn</h2>
+                <h2>Earn to Learn</h2>
                 {recommendedModules.length > 0 ? (
                     <ul>
                         {recommendedModules.map(module => (
-                            <li key={module.id}>{module.title}</li>
+                            <li key={module.id}>{module.title} Test</li>
                         ))}
                     </ul>
                 ) : (
-                    <p>No modules available for your level.</p>
+                    <p>Selected Quizzes</p>
                 )}
             </div>
         );
