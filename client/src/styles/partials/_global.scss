@@ -26,7 +26,11 @@ h2 {
 }
 
 p {
-  font-weight: 400;
+
+  font-weight: 200;
+  font-size: $font-size-base;
+  flex-grow: 1;
+
 }
 
 ul,
@@ -52,4 +56,6 @@ button {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
+
 }
+

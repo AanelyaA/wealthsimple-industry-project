@@ -8,7 +8,7 @@ app.use(cors());
 
 // Mock user data
 const users = [
-  { email: 'client@wealthsimple.com', password: 'passwordpassword' }
+  { email: 'client@wealthsimple.com', password: '123456' }
 ];
 
 app.post('/api/login', (req, res) => {

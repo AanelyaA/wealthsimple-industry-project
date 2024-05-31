@@ -14,7 +14,7 @@ const Login = () => {
         try {
             const response = await axios.post('http://localhost:3000/api/login', { email, password });
             if (response.data.success) {
-                navigate('/dashboard'); // redirect to dashboard on success
+                navigate('/welcome1'); // redirect to dashboard on success
             } else {
                 setError('Invalid email or password');
             }
@@ -23,25 +23,33 @@ const Login = () => {
         }
     };
 
+        const handleBack = () => {
+        navigate(-1); // Navigate to the previous page
+    };
+
     return (
         <div className="login-container">
+            <div className="back-text" onClick={handleBack}>Back</div>
             <h2>Log in</h2>
             <form className='form__container' onSubmit={handleSubmit}>
                 <div className='input__container'>
                     <div >
                         <label>Email</label>
-                        <input type="email" value={email} onChange={(e) => setEmail(e.target.value)} required />
+                        <input type="email" value={email} onChange={(e) => setEmail(e.target.value)} required placeholder='Email'/>
                     </div>
                     <div>
                         <label>Password</label>
-                        <input type="password" value={password} onChange={(e) => setPassword(e.target.value)} required />
+                        <input type="password" value={password} onChange={(e) => setPassword(e.target.value)} required placeholder='Password'/>
+                    </div>
+                    {error && <p className='error__message'>{error}</p>}
                 </div>
-                {error && <p className='error__message'>{error}</p>}
+                <div className='p-container'>
+                    <p>Don't have an account! <a href="/signup">Sign up</a></p>
+                    <p><a href="/forgot-password">Forgot password</a></p>
                 </div>
                 <button type="submit">Log in</button>
             </form>
-            <p>Don't have an account? <a href="/signup">Sign up</a></p>
-            <p><a href="/forgot-password">Forgot password?</a></p>
+
         </div>
     );
 };
