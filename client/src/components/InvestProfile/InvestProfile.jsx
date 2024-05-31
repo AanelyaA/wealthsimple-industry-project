@@ -1,18 +1,28 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import './InvestProfile.scss';
+import ReferralModal from '../ReferralModal/ReferralModal'; // Import the modal component
 import coinIcon from '../../assets/coin.mp4';
 import timeIcon from '../../assets/time.mp4';
-import profileIcon from '../../assets/profile-icon.png'; // Ensure you have this icon
-import quizIcon from '../../assets/quiz-icon.png'; // Ensure you have this icon
-import investIcon from '../../assets/invest-icon.png'; // Ensure you have this icon
-import savingsIcon from '../../assets/savings-icon.png'; // Ensure you have this icon
+import profileIcon from '../../assets/profile-icon.png';
+import quizIcon from '../../assets/quiz-icon.png';
+import investIcon from '../../assets/invest-icon.png';
+import savingsIcon from '../../assets/savings-icon.png';
 
 const InvestProfile = () => {
     const navigate = useNavigate();
+    const [isModalOpen, setIsModalOpen] = useState(false);
 
     const handleBackToProfile = () => {
         navigate('/profile');
+    };
+
+    const openModal = () => {
+        setIsModalOpen(true);
+    };
+
+    const closeModal = () => {
+        setIsModalOpen(false);
     };
 
     return (
@@ -33,32 +43,33 @@ const InvestProfile = () => {
             </header>
             <div className="balance">
                 <h2>$5.00</h2>
+                <p>Your current rewards balance</p>
             </div>
             <div className="summary-cards">
                 <div className="summary-card">
                     <h3>Rewards Earned</h3>
-                    <p>30 Min</p>
-                    <span>Expert Time</span>
-                    <span className="badge">30 Min</span>
+                    <p>30 min</p>
+                    <p>Expert Time</p>
+                    <span className="badge">30 min</span>
                 </div>
                 <div className="summary-card">
                     <h3>Rewards Spent</h3>
                     <p>$0.00</p>
                     <span>This month</span>
-                    <span className="badge">2% cashback</span>
+                    <span className="badge">1% Cashback</span>
                 </div>
             </div>
             <div className="actions">
-                <button className="action-button">Add funds</button>
-                <button className="action-button">Pay a bill</button>
+                <button className="action-button">Deposit Funds</button>
+                <button className="action-button">Settle Bills</button>
                 <button className="action-button">Transfer Money</button>
-                <button className="action-button">Explore Stocks</button>
+                <button className="action-button">Explore Options</button>
             </div>
             <div className="offer-banner">
                 <p>
-                Earn extra rewards by referring friends to FLEX. Unlock an additional 0.5% interest when your referrals sign up and make a deposit of $500 or more.Terms Apply.
+                    Earn extra rewards by referring friends to FLEX. Unlock an additional 0.5% interest when your referrals sign up and make a deposit of $500 or more.
                 </p>
-                <button className="banner-button">&rarr;</button>
+                <button className="banner-button" onClick={openModal}>&rarr;</button>
             </div>
             <footer className="footer">
                 <nav className="nav-bar">
@@ -76,6 +87,7 @@ const InvestProfile = () => {
                     </button>
                 </nav>
             </footer>
+            <ReferralModal isOpen={isModalOpen} onClose={closeModal} />
         </div>
     );
 };
