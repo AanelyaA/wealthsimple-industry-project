@@ -40,12 +40,12 @@ const Quiz = () => {
                     correctOption={correctOption}
                 />
                 {isLastQuestion ? (
-                    <button onClick={() => {
+                    <button className="quiz-btn" onClick={() => {
                         alert('Quiz Completed!');
                         navigate("/profile")
                     }}>Check Result</button>
                 ) : (
-                    <button 
+                    <button className="quiz-btn"
                         onClick={handleNextQuestion} 
                         disabled={selectedOption === null}
                     >
