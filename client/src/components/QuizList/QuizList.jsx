@@ -5,11 +5,11 @@ import icon from "../../assets/icons/arrow_back_24dp.svg";
 import tldr from "../../assets/images/tldr.png"
 
 const learningModules = [
-  { id: 1, title: "Introduction to Budgeting" },
-  { id: 2, title: "Understanding Investments" },
-  { id: 3, title: "Saving Strategies" },
-  { id: 4, title: "Managing Debt Effectively" },
-  { id: 5, title: "Retirement Planning" },
+  { id: 1, title: "Introduction to Budgeting 💵" },
+  { id: 2, title: "Understanding Investments 📈" },
+  { id: 3, title: "Saving Strategies 💸" },
+  { id: 4, title: "Managing Debt Effectively 💳" },
+  { id: 5, title: "Retirement Planning 💰" },
 ];
 
 const QuizList = () => {
