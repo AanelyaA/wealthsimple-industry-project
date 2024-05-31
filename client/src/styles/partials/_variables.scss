@@ -1,0 +1,25 @@
+@use "typography" as *;
+
+// Breakpoints
+$tablet-breakpoint: 768px;
+$desktop-breakpoint: 1280px;
+
+// Fonts
+$primary-font: "Futura PT", sans-serif;
+$header-font: "Futura PT Demi", sans-serif;
+$title-font: "Tiempos Headline", serif;
+
+// Colors
+$primary-color: #fff;
+$secondary-color: #f9f9f9;
+$accent-color: #E1DCD0;
+$text-color: #32302F;
+$heading-color: #32302F;
+
+// Sizes
+$font-size-base: 14px;
+$font-size-lg: 24px;
+$font-size-xl: 32px;
+$border-radius: 8px;
+$padding-base: 10px;
+$margin-base: 20px;

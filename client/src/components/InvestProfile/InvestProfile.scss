@@ -1,0 +1,144 @@
+@use '../../styles/partials/variables' as *;
+@use '../../styles/partials/mixins' as *;
+@use '../../styles/partials/typography' as *;
+
+.invest-profile {
+    padding: $padding-base;
+    background-color: $primary-color;
+    font-family: $primary-font;
+    @include flex-column;
+    height: 100vh;
+    box-sizing: border-box;
+
+    .header {
+        @include flex-space-between;
+        margin-bottom: $margin-base;
+
+        .back-button {
+            background: none;
+            border: none;
+            font-size: $font-size-lg;
+            cursor: pointer;
+        }
+
+        h1 {
+            font-size: $font-size-lg;
+            font-family: $title-font;
+        }
+
+        .header-icons {
+            @include flex-space-between;
+
+            .icon-button {
+                background: none;
+                border: none;
+                margin-left: 10px;
+                cursor: pointer;
+
+                img {
+                    width: 24px;
+                    height: 24px;
+                }
+            }
+        }
+    }
+
+    .balance {
+        text-align: center;
+        margin: $margin-base 0;
+
+        h2 {
+            font-size: $font-size-xl;
+            font-family: $title-font;
+        }
+    }
+
+    .summary-cards {
+        @include flex-space-between;
+        margin-bottom: $margin-base;
+
+        .summary-card {
+            background-color: $secondary-color;
+            border-radius: $border-radius;
+            padding: $padding-base;
+            text-align: center;
+            width: 48%;
+
+            h3 {
+                font-size: $font-size-base;
+                font-family: $header-font;
+            }
+
+            p {
+                font-size: $font-size-lg;
+            }
+
+            span {
+                display: block;
+                margin-top: 5px;
+                color: $text-color;
+                font-size: $font-size-base;
+
+                &.badge {
+                    background-color: #e0e0e0;
+                    border-radius: 4px;
+                    padding: 5px;
+                    display: inline-block;
+                    margin-top: 10px;
+                }
+            }
+        }
+    }
+
+    .actions {
+        @include flex-space-between;
+        flex-wrap: wrap;
+        margin-bottom: $margin-base;
+
+        .action-button {
+            background-color: $secondary-color;
+            border: none;
+            border-radius: $border-radius;
+            padding: $padding-base;
+            flex: 1 1 45%;
+            text-align: center;
+            cursor: pointer;
+            font-size: $font-size-base;
+            margin-bottom: 10px;
+        }
+    }
+
+    .offer-banner {
+        background-color: $accent-color;
+        border-radius: $border-radius;
+        padding: $padding-base * 2;
+        @include flex-space-between;
+        margin-bottom: $margin-base;
+
+        p {
+            font-size: $font-size-base;
+            flex-grow: 1;
+        }
+
+        .banner-button {
+            background: none;
+            border: none;
+            font-size: $font-size-lg;
+            cursor: pointer;
+            color: $text-color;
+        }
+    }
+
+    .footer {
+        @include flex-space-between;
+        margin-top: auto;
+
+        .footer-button {
+            background: none;
+            border: none;
+            font-size: $font-size-base;
+            cursor: pointer;
+            color: $text-color;
+        }
+    }
+}
