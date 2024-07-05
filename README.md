@@ -1,6 +1,6 @@
-# Wealthsimple Flex 💪
+# Wealthsimple Flex App 💪
 
-*Personalized Financial Education and Advice*
+*Personalized Financial Education and Advice with Rewards*
 
 ## Introduction
 Wealthsimple Flex is a personalized financial education and advice platform aimed at empowering users with customized financial literacy tools. Developed during a 24-hour hackathon in collaboration with Wealthsimple, this project was designed to deliver an application with a tailored financial guidance and education.
