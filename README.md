@@ -3,7 +3,7 @@
 *Personalized Financial Education and Advice*
 
 ## Introduction
-Wealthsimple Flex is a personalized financial education and advice platform designed to empower users with tailored financial literacy tools. This project was developed in collaboration with Wealthsimple during a tech sprint.
+Wealthsimple Flex is a personalized financial education and advice platform aimed at empowering users with customized financial literacy tools. Developed during a 24-hour hackathon in collaboration with Wealthsimple, this project was designed to deliver an application with a tailored financial guidance and education.
 
 ### Team
 Team Name: FLEX
@@ -13,18 +13,18 @@ Team Name: FLEX
 - Sharon
 - Anelya
 
-### The Question Posed to us
+### The Question
 How might we help Wealthsimple‘s clients in Canada to improve their financial literacy and make better personal finance decisions?
 
 ### Problem Statement
-Investment participation among Canadians is low due to significant financial burdens such as student loan debt, economic uncertainty, and a widespread lack of financial literacy. Source: Charles Schwab Foundation.
+Investment participation among Canadians is low due to significant financial burdens such as student loan debt, economic uncertainty, and a widespread lack of financial literacy.
 
 ### Research Facts
-Student Loan Debt: According to Statistics Canada, the average student loan debt in Canada is over $26,000 per graduate .
+*Student Loan Debt*: According to Statistics Canada, the average student loan debt in Canada is over $26,000 per graduate .
 
-Economic Uncertainty: Leads to cautious financial behavior. A report by the Financial Consumer Agency of Canada (FCAC) highlights that many Canadians are concerned about their financial future due to economic instability .
+*Economic Uncertainty*: Leads to cautious financial behavior. A report by the Financial Consumer Agency of Canada (FCAC) highlights that many Canadians are concerned about their financial future due to economic instability .
 
-Lack of Financial Literacy: Many Canadians lack basic investment knowledge. A study by the Organisation for Economic Co-operation and Development (OECD) found that Canada ranks below average in financial literacy among its adult population, indicating a need for better financial education and resources .
+*Lack of Financial Literacy*: Many Canadians lack basic investment knowledge. A study by the Organisation for Economic Co-operation and Development (OECD) found that Canada ranks below average in financial literacy among its adult population, indicating a need for better financial education and resources .
 
 ### Our Solution
 Wealthsimple Flex delivers personalized financial advice based on user profiles and goals. It leverages user input to recommend educational resources and strategies tailored to individual financial journeys.
