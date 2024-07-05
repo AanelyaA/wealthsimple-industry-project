@@ -40,5 +40,5 @@ Wealthsimple Flex delivers personalized financial advice based on user profiles 
 ### Demonstration
 [Flex Presentation](/client/assets/flexpdf.pdf)
 
-### References
+### Certificate
 [Certificate of Participation](/client/assets/certificate.pdf)
